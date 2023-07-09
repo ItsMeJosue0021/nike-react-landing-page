@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'monument';
+    src: url('./fonts/MonumentExtended-Regular.otf') format('truetype'); /* adjust the path and format as needed */
+    /* Add additional src lines for other font formats if necessary */
+    /* Example for other formats: */
+    /* src: url('./fonts/your-font-file.woff') format('woff'), */
+    /*      url('./fonts/your-font-file.woff2') format('woff2'); */
+  }
+  
