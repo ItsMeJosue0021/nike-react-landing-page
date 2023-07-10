@@ -25,7 +25,7 @@ const Hero = () => {
                 </a>
             </div>
             <div className="w-full flex items-center justify-center lg:justify-start">
-                <div className='flex flex-col space-y-3 w-fit pt-3'>
+                <div className='flex flex-col space-y-5 w-fit pt-3'>
                     <div className='flex items-center space-x-4'>
                         <HeroCard imageUrl={Shoe1}/>
                         <HeroCard imageUrl={Shoe2}/>    

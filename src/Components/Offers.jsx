@@ -12,12 +12,11 @@ const Offers = () => {
     <div className='bg-gray-100'>
         <div className='flex flex-col items-center justify-center max-w-[1240px] mx-auto px-4 py-16'>
             <h1 className='monument text-4xl '>What we <span className='text-redor'>offer</span></h1>
-            <div className='flex items-center justify-center space-x-4 py-10'>
+            <div className='flex flex-wrap gap-4 items-center justify-center pt-10'>
                <OfferCard Icon={MdSupportAgent} Title={"24/7 Support"}/>
                <OfferCard Icon={BsCoin} Title={"Cash Back"}/>
                <OfferCard Icon={LiaPercentageSolid} Title={"Monthly Offer"}/>
-               {/* <OfferCard Icon={GiNotebook} Title={"Membership"}/> */}
-               <div className='flex flex-col items-center space-y-3 p-4 rounded-lg w-64 bg-black'>
+               <div className='flex flex-col items-center space-y-3 p-4 rounded-lg w-full md:w-64 bg-black cursor-pointer'>
                     <div className='flex items-center justify-center bg-gray-100 rounded-full p-8'>
                         <GiNotebook size={80}/>
                     </div>

@@ -1,16 +1,10 @@
 import React from "react";
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import Stats from "./Components/Stats";
-import Offers from "./Components/Offers";
+import Body from "./Components/Body";
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <Hero />
-        <Stats />
-        <Offers />
+        <Body />
     </div>
   );
 }
