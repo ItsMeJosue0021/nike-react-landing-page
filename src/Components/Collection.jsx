@@ -10,9 +10,9 @@ import Arrows from './Arrows'
 
 const Collection = () => {
   return (
-    <div className='flex flex-col items-center justify-center max-w-[1240px] mx-auto px-4 pt-16'>
+    <div className='flex flex-col items-center justify-center max-w-[1240px] mx-auto px-4 py-16'>
         <h1 className='monument text-4xl '>Our <span className='text-redor'>collection</span></h1>
-        <ul className='w-full flex flex-col md:flex-row items-center justify-center md:justify-between py-10'>
+        <ul className='w-full flex flex-col md:flex-row items-center justify-center md:justify-evenly py-10'>
             <li className='text-xl monument font-medium'>Boots</li>
             <li className='text-xl monument font-medium text-yellowor'>Shoes</li>
             <li className='text-xl monument font-medium'>Sandals</li>

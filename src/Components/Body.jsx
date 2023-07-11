@@ -7,6 +7,7 @@ import Collection from './Collection'
 import Feedback from './Feedback'
 import NewsLetter from './NewsLetter'
 import Footer from './Footer'
+import TopItem from './TopItem'
 
 const Body = () => {
   return (
@@ -16,6 +17,7 @@ const Body = () => {
         <Stats />
         <Offers />
         <Collection />
+        <TopItem />
         <Feedback />
         <NewsLetter />
         <Footer />
