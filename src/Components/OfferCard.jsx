@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {SiNike} from 'react-icons/si'
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const OfferCard = ({Icon, Title}) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,8 +13,17 @@ const OfferCard = ({Icon, Title}) => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  useEffect(() => {
+        AOS.init({
+            offset: 150,
+            duration: 1400
+        });
+        
+    });
+
   return (
-    <div
+    <div data-aos="fade-right"
       className={`flex flex-col items-center space-y-3 p-4 rounded-lg w-full md:w-64 bg-white group transition-all duration-300 cursor-pointer
       ${ isHovered ? 'hover:bg-black' : ''}`}
       onMouseEnter={handleHover}
