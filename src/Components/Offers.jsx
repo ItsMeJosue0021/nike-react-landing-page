@@ -22,7 +22,7 @@ const Offers = () => {
   return (
     <div className='bg-gray-100'>
         <div className='flex flex-col items-center justify-center max-w-[1240px] mx-auto px-4 py-16'>
-            <h1 className='monument text-4xl '>What we <span className='text-redor'>offer</span></h1>
+            <h1 className='monument text-4xl text-center md:text-left'>What we <span className='text-redor'>offer</span></h1>
             <div className='flex flex-wrap gap-4 items-center justify-center pt-10'>
                <OfferCard Icon={MdSupportAgent} Title={"24/7 Support"} />
                <OfferCard Icon={BsCoin} Title={"Cash Back"} />
