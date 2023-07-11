@@ -5,6 +5,8 @@ import Stats from './Stats'
 import Offers from './Offers'
 import Collection from './Collection'
 import Feedback from './Feedback'
+import NewsLetter from './NewsLetter'
+import Footer from './Footer'
 
 const Body = () => {
   return (
@@ -15,6 +17,8 @@ const Body = () => {
         <Offers />
         <Collection />
         <Feedback />
+        <NewsLetter />
+        <Footer />
     </div>
   )
 }

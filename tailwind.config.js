@@ -10,6 +10,9 @@ module.exports = {
         'yellowor': '#fbb239',
         'lgray': '#fafafa',
       },
+      backgroundImage: {
+        'newsletter': "url('Images/bgshoe.jpg')"
+      }
     },
   },
   plugins: [],
