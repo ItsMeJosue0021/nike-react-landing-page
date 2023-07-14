@@ -58,7 +58,7 @@ const TopItem = () => {
                 <ul className='flex flex-col space-y-4'>
                     <li className='flex items-center space-x-3'>
                         <GoDotFill color='blue'/>
-                        <p className='text-gray-600 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur.</p>
+                        <p className='text-gray-600 text-sm'>Lorem ipsum dolor sit amet consectetur  elit adipisicing. Aspernatur.</p>
                     </li>
                     <li className='flex items-center space-x-3'>
                         <GoDotFill color='#fd5545' size={24} />
