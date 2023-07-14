@@ -20,12 +20,12 @@ const Collection = () => {
             <li className='text-xl monument font-medium'>Sport Shoe</li>
         </ul>
         <div className='flex flex-wrap gap-8 justify-center'>
-            <CollectionCard shoeImage={Shoe1}/>
-            <CollectionCard shoeImage={Shoe2}/>
-            <CollectionCard shoeImage={Shoe3}/>
-            <CollectionCard shoeImage={Shoe4}/>
-            <CollectionCard shoeImage={Shoe5}/>
-            <CollectionCard shoeImage={Shoe6}/> 
+            <CollectionCard shoeImage={Shoe1} animation="flip-left"/>
+            <CollectionCard shoeImage={Shoe2} animation="flip-right"/>
+            <CollectionCard shoeImage={Shoe3} animation="flip-left"/>
+            <CollectionCard shoeImage={Shoe4} animation="flip-right"/>
+            <CollectionCard shoeImage={Shoe5} animation="flip-left"/>
+            <CollectionCard shoeImage={Shoe6} animation="flip-right"/> 
         </div>
         <Arrows />
     </div>

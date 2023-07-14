@@ -6,12 +6,21 @@ import Shoe2 from '../Images/shoe2.png'
 import {GoDotFill} from 'react-icons/go'
 import HeroCard from './HeroCard'
 import HerroDots from './HerroDots'
+import Typed from 'react-typed'
 
 const Hero = () => {
   return (
     <div className='flex flex-col lg:flex-row space-y-8 lg:space-y-0 items-center justify-between max-w-[1240px] mx-auto px-4 py-6'>
         <div className='flex flex-col space-y-8'>
-            <h1 className='monument text-5xl lg:text-6xl text-center lg:text-left'>Summer <br /> Collections</h1>
+            <h1 className='monument text-5xl lg:text-6xl text-center lg:text-left'>Summer <br /> 
+                <Typed 
+                    className='' 
+                    strings={['Collection', 'Wear', 'Fashion']}
+                    typeSpeed={120}
+                    backSpeed={120}
+                    loop
+                />
+            </h1>
             <div className="w-full flex items-center justify-center lg:justify-start">
                 <h2 className='monument text-4xl lg:text-5xl p-2 px-3 border border-redor text-redor w-fit'>2023</h2>
             </div>

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"
+import "aos/dist/aos.css"
 import {GoDotFill} from 'react-icons/go'
 import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import {HiShoppingCart} from 'react-icons/hi'
@@ -9,18 +11,26 @@ import Shoe3 from '../Images/shoe3.png'
 import {AiFillStar, AiOutlineStar} from 'react-icons/ai'
 
 const TopItem = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 150,
+            duration: 1400
+        });
+    });
+
   return (
     <div className='bg-gray-100'>
         <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 items-center justify-center max-w-[1240px] mx-auto px-4'>
             <div className='w-full md:w-1/2 flex items-center justify-center relative py-8 px-12 bg-black'>
                 <img src={Shoe} alt="" className='p-12 rounded-full bg-white'/>
                 <div className='absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col space-y-2'>
-                    <img src={Shoe} alt="" className='w-16 h-16 rounded border border-gray-200 bg-black bg-opacity-50'/>
-                    <img src={Shoe1} alt="" className='w-16 h-16 p-1 rounded border border-gray-200 bg-black bg-opacity-50'/>
-                    <img src={Shoe2} alt="" className='w-16 h-16 p-1 rounded border border-gray-200 bg-black bg-opacity-50'/>
-                    <img src={Shoe3} alt="" className='w-16 h-16 p-1 rounded border border-gray-200 bg-black bg-opacity-50'/>
+                    <img data-aos="fade-up" src={Shoe} alt="" className='w-16 h-16 rounded border border-gray-200 bg-black bg-opacity-50'/>
+                    <img data-aos="fade-up" src={Shoe1} alt="" className='w-16 h-16 p-1 rounded border border-gray-200 bg-black bg-opacity-50'/>
+                    <img data-aos="fade-up" src={Shoe2} alt="" className='w-16 h-16 p-1 rounded border border-gray-200 bg-black bg-opacity-50'/>
+                    <img data-aos="fade-up" src={Shoe3} alt="" className='w-16 h-16 p-1 rounded border border-gray-200 bg-black bg-opacity-50'/>
                 </div>
-                <div className='absolute top-12 left-12 flex space-x-2 bg-black bg-opacity-50 p-4 rounded border border-gray-200'>
+                <div data-aos="fade-up" className='absolute top-12 left-12 flex space-x-2 bg-black bg-opacity-50 p-4 rounded border border-gray-200'>
                     <div className='flex flex-col items-center space-y-2'>
                         <h1 className='monument text-lg font-medium text-white'>Nike air max</h1>
                         <h2 className='monument text-2xl text-redor font-medium'>$32.00</h2>

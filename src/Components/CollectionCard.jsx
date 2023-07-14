@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {HiShoppingCart} from 'react-icons/hi'
 import {AiOutlineHeart} from 'react-icons/ai'
 import {AiFillStar} from 'react-icons/ai'
+import AOS from "aos"
+import "aos/dist/aos.css"
 
-const CollectionCard = ({shoeImage}) => {
+const CollectionCard = ({shoeImage, animation}) => {
+
+    
+
   return (
     <div className='flex flex-col items-center justify-center space-y-4 group cursor-pointer'>
-        <div className='w-[350px] h-72 bg-gray-100 p-12 py-16 flex items-center justify-center group-hover:bg-black relative'>  
+        <div data-aos={animation} className='w-[350px] h-72 bg-gray-100 p-12 py-16 flex items-center justify-center group-hover:bg-black relative'>  
             <div className='w-[80%] hidden group-hover:flex items-center justify-between absolute top-4'>
                 <a href="#" className='bg-redor text-white monument text-[10px]  px-4 py-1'>Buy</a>
                 <div className='flex items-center space-x-3'>

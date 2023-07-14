@@ -3,7 +3,7 @@ import {SiNike} from 'react-icons/si'
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-const OfferCard = ({Icon, Title}) => {
+const OfferCard = ({Icon, Title, animation}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -18,12 +18,11 @@ const OfferCard = ({Icon, Title}) => {
         AOS.init({
             offset: 150,
             duration: 1400
-        });
-        
-    });
+        }, []);    
+  });
 
   return (
-    <div data-aos="fade-right"
+    <div data-aos={animation}
       className={`flex flex-col items-center space-y-3 p-4 rounded-lg w-full md:w-64 bg-white group transition-all duration-300 cursor-pointer
       ${ isHovered ? 'hover:bg-black' : ''}`}
       onMouseEnter={handleHover}

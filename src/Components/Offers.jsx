@@ -16,7 +16,6 @@ const Offers = () => {
             offset: 150,
             duration: 1400
         });
-        
     });
 
   return (
@@ -24,10 +23,10 @@ const Offers = () => {
         <div className='flex flex-col items-center justify-center max-w-[1240px] mx-auto px-4 py-16'>
             <h1 className='monument text-4xl text-center md:text-left'>What we <span className='text-redor'>offer</span></h1>
             <div className='flex flex-wrap gap-4 items-center justify-center pt-10'>
-               <OfferCard Icon={MdSupportAgent} Title={"24/7 Support"} />
-               <OfferCard Icon={BsCoin} Title={"Cash Back"} />
-               <OfferCard Icon={LiaPercentageSolid} Title={"Monthly Offer"}/>
-               <div data-aos="fade-right" className='flex flex-col items-center space-y-3 p-4 rounded-lg w-full md:w-64 bg-black cursor-pointer'>
+               <OfferCard Icon={MdSupportAgent} Title={"24/7 Support"} animation="fade-up"/>
+               <OfferCard Icon={BsCoin} Title={"Cash Back"} animation="fade-down"/>
+               <OfferCard Icon={LiaPercentageSolid} Title={"Monthly Offer"} animation="fade-up"/>
+               <div data-aos="fade-down" className='flex flex-col items-center space-y-3 p-4 rounded-lg w-full md:w-64 bg-black cursor-pointer'>
                     <div className='flex items-center justify-center bg-gray-100 rounded-full p-8'>
                         <GiNotebook size={80}/>
                     </div>

@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"
+import "aos/dist/aos.css"
 
-const FeedbackCard = ({Image, Name, Job}) => {
+const FeedbackCard = ({Image, Name, Job, animation}) => {
+
+  useEffect(() => {
+    AOS.init({
+        offset: 150,
+        duration: 1400
+    });
+  });
+
   return (
-    <div className='flex flex-col space-y-6 w-80 rounded-lg border border-gray-300 p-6'>
+    <div className='flex flex-col space-y-6 w-80 rounded-lg border border-gray-300 p-6' data-aos={animation}>
         <div className='flex items-center space-x-3'>
             <img src={Image} alt="" className='w-14 h-14 rounded-full'/>
             <div>
